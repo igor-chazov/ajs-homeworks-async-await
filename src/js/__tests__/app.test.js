@@ -1,7 +1,7 @@
 import GameSavingLoader from '../gamesavingloader';
 
 test('Должна создавать объект типа GameSaving', async () => {
-  const gameSaving = JSON.parse(await GameSavingLoader.load());
+  const gameSaving = await GameSavingLoader.load();
   expect(gameSaving).toEqual({
     id: 9,
     created: 1546300800,
